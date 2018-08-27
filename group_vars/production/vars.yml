@@ -1,0 +1,13 @@
+Sts.Role: arn:aws:iam::875455485177:role/DockerProductionAWSAdmin
+Sts.Region: eu-central-1
+
+config_vpc_name: Default
+config_az_count: 2
+
+config_application_ami: ami-03c7987c7a6b1bc19
+config_application_instance_type: t2.micro
+config_application_keyname: docker-production-aws
+
+config_proxy_image: 875455485177.dkr.ecr.eu-central-1.amazonaws.com/dockerproductionaws/squid
+config_proxy_image_tag: latest
+config_proxy_whitelist: ".dockerproductionaws.org"
